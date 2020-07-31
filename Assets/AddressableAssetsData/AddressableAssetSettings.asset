@@ -69,11 +69,11 @@ MonoBehaviour:
       - m_Id: 61ede7ce7e30fb747b07aa48b8aafee8
         m_Value: LocalData/[BuildTarget]
       - m_Id: 81cfe91e6eb598843b1ec5c056703f21
-        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+        m_Value: http://[PrivateIpAddress_1]:[HostingServicePort]
       - m_Id: 46ac53d8dac0d854f9085b8e6a78abb8
         m_Value: ServerData/[BuildTarget]
       - m_Id: 9ae437bdea6897a4288a06726957b4c3
-        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+        m_Value: http://[PrivateIpAddress_1]:[HostingServicePort]
     m_ProfileEntryNames:
     - m_Id: 80d1060c8bc108f4781e0647dd778190
       m_Name: BuildTarget
@@ -117,11 +117,11 @@ MonoBehaviour:
         m_SerializedData:
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Int32
-          m_Data: 61115
+          m_Data: 62423
           m_Key: HostingServicePort
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.String
-          m_Data: LocalData/Android
+          m_Data: LocalData/StandaloneWindows64
           m_Key: ContentRoot
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Boolean
