@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="MainMenu" style="width: 100%; height: 100%;">
+        <Style src="/Assets/Resources/USS/FontStyle.uss" />
+        <Style src="/Assets/Resources/USS/ButtonStyle.uss" />
+        <ui:VisualElement name="Background" style="background-image: url(&apos;/Assets/Textures/background3_v2.png&apos;); width: 100%; height: 100%;" />
+        <ui:VisualElement name="MenuContainer" style="align-items: stretch; flex-direction: column; height: 100%; width: 10%; position: absolute;">
+            <ui:Button text="HOME" name="Home" class="MainMenuButtonStyle" style="height: 10%;" />
+            <ui:Button text="NEW GAME" name="NewGame" class="MainMenuButtonStyle" />
+            <ui:Button text="COLLECTION" name="Collection" class="MainMenuButtonStyle" style="height: 10%;" />
+            <ui:Button text="STORE" name="Store" class="MainMenuButtonStyle" style="height: 10%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Currency" style="position: absolute; left: 25%; top: 0; right: 25%; bottom: 90%; align-items: center; flex-direction: row; justify-content: center; margin-left: 0;">
+            <ui:VisualElement name="Money" style="flex-direction: row; flex-grow: 1; justify-content: center;">
+                <ui:VisualElement name="Icon" style="background-image: url(&apos;/Assets/Textures/Icon_Money.png&apos;); width: 75px; height: 100px; -unity-background-scale-mode: scale-to-fit;" />
+                <ui:Label text="0" name="Value" style="-unity-text-align: middle-left; font-size: 50px; margin-left: 10px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Diamond" style="flex-direction: row; flex-grow: 1; justify-content: center;">
+                <ui:VisualElement name="Icon" style="background-image: url(&apos;/Assets/Textures/Icon_Diamond.png&apos;); width: 75px; height: 100px; -unity-background-scale-mode: scale-to-fit;" />
+                <ui:Label text="0" name="Value" style="-unity-text-align: middle-left; font-size: 50px; margin-right: 0; min-width: -1px; margin-left: 10px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Metal" style="flex-direction: row; flex-grow: 1; justify-content: center;">
+                <ui:VisualElement name="Icon" style="background-image: url(&apos;/Assets/Textures/Icon_silvers.png&apos;); width: 75px; height: 100px; -unity-background-scale-mode: scale-to-fit;" />
+                <ui:Label text="0" name="Value" style="justify-content: space-around; align-items: auto; -unity-text-align: middle-left; font-size: 50px; margin-left: 10px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Options" style="width: 100px; height: 100px; position: absolute; right: 0; top: 0; align-items: flex-end;">
+            <ui:Button name="OptionButton" style="background-image: url(&apos;/Assets/Textures/Sci-fi-Circle02_01.png&apos;); background-color: rgba(88, 88, 88, 0); -unity-background-scale-mode: scale-to-fit; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); width: 80px; height: 80px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Other" style="flex-direction: row-reverse; position: absolute; left: 10%; right: 0; top: 90%; bottom: 0;">
+            <ui:Button text="Daily Login" name="DailyLogin" class="RewardButtonStyle" />
+            <ui:Button text="Rewards" name="Rewards" class="RewardButtonStyle" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

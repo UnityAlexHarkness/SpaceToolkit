@@ -1,0 +1,4 @@
+.unity-text-element {
+    -unity-font: resource('Teko-Regular');
+    color: rgb(217, 204, 26);
+}

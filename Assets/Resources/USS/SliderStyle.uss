@@ -1,0 +1,7 @@
+#unity-tracker {
+    background-image: url('/Assets/Textures/Slider2.png');
+}
+
+#unity-dragger {
+    background-image: url('/Assets/Textures/Btn_slider1.png');
+}

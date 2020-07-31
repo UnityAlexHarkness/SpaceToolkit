@@ -1,0 +1,45 @@
+.MainMenuButtonStyle {
+    background-image: url('/Assets/Textures/Btn_button01_n.png');
+    -unity-font-style: bold;
+    font-size: 30px;
+    height: 10%;
+    -unity-text-align: middle-center;
+    width: 100%;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    color: rgb(210, 197, 27);
+    -unity-font: resource('Teko-Regular');
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.MainMenuButtonStyle:hover {
+    background-image: url('/Assets/Textures/Btn_button01_h.png');
+}
+
+.MainMenuButtonStyle:active {
+    background-image: url('/Assets/Textures/Btn_button01_p.png');
+}
+
+.RewardButtonStyle {
+    background-image: url('/Assets/Textures/Btn_button03_n.png');
+    height: 90%;
+    width: 15%;
+    background-color: rgba(56, 56, 56, 0);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    color: rgb(231, 216, 26);
+    -unity-font: resource('Teko-Regular');
+    font-size: 30px;
+}
+
+.RewardButtonStyle:hover {
+    background-image: url('/Assets/Textures/Btn_button03_h.png');
+}
+
+.RewardButtonStyle:active {
+    background-image: url('/Assets/Textures/Btn_button03_p.png');
+}

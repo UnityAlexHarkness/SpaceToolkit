@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="progressbar-template" src="/Assets/UI/UXML/ProgressBarTemplate.uxml" />
+    <ui:VisualElement name="Background" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-image: url(&apos;/Assets/Textures/background.png&apos;); -unity-background-scale-mode: scale-and-crop; width: 100%; height: 100%;">
+        <Style src="/Assets/Resources/USS/FontStyle.uss" />
+        <ui:VisualElement name="LoadinBarContainer" style="align-items: center; justify-content: flex-end; top: 80%;">
+            <ui:Instance template="progressbar-template" name="LoadingBar" style="align-items: flex-start; justify-content: flex-start; flex-direction: column; -unity-background-scale-mode: stretch-to-fill;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Label text="SPACE BATTLE" name="GameNameText" style="font-size: 200px; -unity-font-style: bold; -unity-font: resource(&apos;Teko-Regular&apos;); color: rgb(93, 178, 119); -unity-text-align: upper-center; height: 255px; position: absolute; left: 0; top: 20%; right: 0; bottom: 0;">
+        <Style src="/Assets/Resources/USS/FontStyle.uss" />
+    </ui:Label>
+    <ui:Label text="3000" name="GameNameText" style="font-size: 200px; -unity-font-style: bold; -unity-font: resource(&apos;Teko-Regular&apos;); color: rgb(93, 178, 119); -unity-text-align: upper-center; height: 255px; position: absolute; left: 0; top: 35%; right: 0; bottom: 0;">
+        <Style src="/Assets/Resources/USS/FontStyle.uss" />
+    </ui:Label>
+</ui:UXML>

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement picking-mode="Ignore" style="background-image: url(&apos;/Assets/Textures/bg_Item.png&apos;); width: 200px; height: 200px; align-items: center; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; flex-grow: initial; flex-direction: column; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+        <Style src="/Assets/Resources/USS/FontStyle.uss" />
+        <ui:Label text="Item Name" name="Title" picking-mode="Ignore" style="-unity-text-align: upper-center; margin-top: 10px; font-size: 30px;" />
+        <ui:Label text="Description of Item" name="Description" picking-mode="Ignore" style="-unity-text-align: upper-center; margin-top: 10px; font-size: 20px;" />
+        <ui:VisualElement name="Icon" picking-mode="Ignore" style="background-image: url(&apos;/Assets/Textures/9.png&apos;); width: 88px; height: 105px; -unity-text-align: upper-left; align-items: center; justify-content: flex-start; flex-wrap: nowrap; flex-direction: column;" />
+    </ui:VisualElement>
+</ui:UXML>

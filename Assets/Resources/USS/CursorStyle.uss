@@ -1,0 +1,5 @@
+.cursor {
+    width: 100%;
+    height: 100%;
+    cursor: url('/Assets/SCI-FI UI Pack Pro/SCI-FI UI Pack Pro V1/Resources_V1/Sliced Elements/Components9/Sci-fi-Mouse-cursor_b4.png');
+}
