@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Profiling;
 using UnityEngine.UIElements;
 
 public class MainMenu : MonoBehaviour
@@ -14,18 +15,24 @@ public class MainMenu : MonoBehaviour
 
     private void OnEnable()
     {
+        Profiler.BeginSample("MAIN MENU ENABLE");
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
         
-        VisualElement homeTemplate = root.Query<VisualElement>("Home");
-        Button homeButton = homeTemplate.Query<Button>();
+        Button homeButton = root.Query<Button>("Home");
         homeButton.clickable.clicked += ShowHome;
-
-        VisualElement collectionTemplate = root.Query<VisualElement>("Collection");
-        Button collectionButton = collectionTemplate.Query<Button>();
-        collectionButton.clickable.clicked += ShowCollectionScreen;
+        RegisterSounds(homeButton);
         
-        VisualElement dailyLoginTemplate = root.Query<VisualElement>("DailyLogin");
-        Button dailyLoginButton = dailyLoginTemplate.Query<Button>();
+        Button newButton = root.Query<Button>("NewGame");
+        RegisterSounds(newButton);
+
+        Button collectionButton = root.Query<Button>("Collection");
+        collectionButton.clickable.clicked += ShowCollectionScreen;
+        RegisterSounds(collectionButton);
+        
+        Button storeButton = root.Query<Button>("Store");
+        RegisterSounds(storeButton);
+        
+        Button dailyLoginButton = root.Query<Button>("DailyLogin");
         dailyLoginButton.clickable.clicked += ShowDailyLoginScreen;
         
         Button optionButton = root.Query<Button>("OptionButton");
@@ -40,9 +47,28 @@ public class MainMenu : MonoBehaviour
         VisualElement MetalRoot = root.Query<VisualElement>("Metal");
         Metal = MetalRoot.Query<Label>();
         
+        Profiler.EndSample();
+        
         CurrencyManager.ChangedEvent.AddListener(CurrencyChanged);
         
         ShowHome();
+    }
+
+    private void RegisterSounds(Button button)
+    {
+        button.clickable.clicked += PlayClickedSound;
+        button.RegisterCallback<MouseEnterEvent>(PlayHoverSound);
+
+    }
+
+    private void PlayClickedSound()
+    {
+        AudioManager.Instance.PlayOneShot("ButtonClick");
+    }
+    
+    private void PlayHoverSound(MouseEnterEvent evt)
+    {
+        AudioManager.Instance.PlayOneShot("ButtonHover");
     }
 
     private void OnDestroy()

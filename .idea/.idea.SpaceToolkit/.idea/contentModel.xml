@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\dev\SpaceToolkit" t="IncludeRecursive">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AudioDatabase.cs" t="Include" />
+        <e p="AudioManager.cs" t="Include" />
         <e p="CurrencyManager.cs" t="Include" />
         <e p="Resources" t="Include">
           <e p="USS" t="Include">
@@ -14,110 +16,7 @@
             <e p="SliderStyle.uss" t="Include" />
           </e>
         </e>
-        <e p="Samples" t="Include">
-          <e p="UI Builder" t="Include">
-            <e p="1.0.0-preview.3" t="Include">
-              <e p="OptionsPanel" t="Include">
-                <e p="options_panel.uxml" t="Include" />
-              </e>
-              <e p="TanksGameScreen" t="Include">
-                <e p="TanksGameScreen.uxml" t="Include" />
-              </e>
-              <e p="TanksMainMenu" t="Include">
-                <e p="TanksMainMenu.uxml" t="Include" />
-              </e>
-              <e p="TanksStatsBox" t="Include">
-                <e p="TanksStatsBox.uxml" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="UI Toolkit" t="Include">
-            <e p="1.0.0-preview.3" t="Include">
-              <e p="UIElements Samples" t="Include">
-                <e p="Editor" t="Include">
-                  <e p="Bootstraps" t="Include">
-                    <e p="EditorGeneralRootSelectorInspector.cs" t="Include" />
-                    <e p="RuntimeEventsClickEvent.cs" t="Include" />
-                    <e p="RuntimeEventsGeometryChanged.cs" t="Include" />
-                    <e p="RuntimeEventsKeyboardEvents.cs" t="Include" />
-                    <e p="RuntimeEventsPointerEvents.cs" t="Include" />
-                    <e p="RuntimeGeneralRootSelector.cs" t="Include" />
-                    <e p="RuntimeRenderToTexture.cs" t="Include" />
-                  </e>
-                  <e p="Events" t="Include">
-                    <e p="GeometryChangedWindow.cs" t="Include" />
-                    <e p="KeyboardEventsWindow.cs" t="Include" />
-                    <e p="PointerEventsWindow.cs" t="Include" />
-                  </e>
-                  <e p="General" t="Include">
-                    <e p="DataPersistenceWindow.cs" t="Include" />
-                    <e p="DragAndDropWindow.cs" t="Include" />
-                    <e p="RootSelectorBehaviorInspector.cs" t="Include" />
-                    <e p="RootSelectorWindow.cs" t="Include" />
-                  </e>
-                  <e p="Rendering" t="Include">
-                    <e p="MeshApiWindow.cs" t="Include" />
-                  </e>
-                  <e p="Unity.UIElements.Samples.Editor.asmdef" t="Include" />
-                </e>
-                <e p="Resources" t="Include">
-                  <e p="Layouts" t="Include">
-                    <e p="Events_ClickEvent.uxml" t="Include" />
-                    <e p="Events_GeometryChanged.uxml" t="Include" />
-                    <e p="Events_KeyboardEvents.uxml" t="Include" />
-                    <e p="Events_PointerEvents.uxml" t="Include" />
-                    <e p="General_DataPersistence.uxml" t="Include" />
-                    <e p="General_DragAndDrop.uxml" t="Include" />
-                    <e p="General_RootSelector.uxml" t="Include" />
-                    <e p="General_RootSelectorForInspector.uxml" t="Include" />
-                  </e>
-                  <e p="StyleSheets" t="Include">
-                    <e p="Events_ClickEvent.uss" t="Include" />
-                    <e p="Events_GeometryChanged.uss" t="Include" />
-                    <e p="Events_KeyboardEvents.uss" t="Include" />
-                    <e p="Events_PointerEvents.uss" t="Include" />
-                    <e p="General_DataPersistence.uss" t="Include" />
-                    <e p="General_DragAndDrop.uss" t="Include" />
-                    <e p="General_RootSelector.uss" t="Include" />
-                    <e p="General_RootSelectorForInspector.uss" t="Include" />
-                    <e p="General_RootSelectorForRuntime.uss" t="Include" />
-                  </e>
-                </e>
-                <e p="Runtime" t="Include">
-                  <e p="Events" t="Include">
-                    <e p="ClickEventSample.cs" t="Include" />
-                    <e p="GeometryChanged.cs" t="Include" />
-                    <e p="KeyboardEvents.cs" t="Include" />
-                    <e p="PointerEvents.cs" t="Include" />
-                  </e>
-                  <e p="General" t="Include">
-                    <e p="RootSelector.cs" t="Include" />
-                    <e p="RootSelectorBehavior.cs" t="Include" />
-                  </e>
-                  <e p="Rendering" t="Include">
-                    <e p="Rotator.cs" t="Include" />
-                    <e p="UITextureProjection.cs" t="Include" />
-                  </e>
-                </e>
-                <e p="Unity.UIElements.Samples.asmdef" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
         <e p="SceneManager.cs" t="Include" />
-        <e p="SCI-FI UI Pack Pro" t="Include">
-          <e p="SCI-FI UI Pack Pro V1" t="Include">
-            <e p="Resources_V1" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="CircleSlider.cs" t="Include" />
-                <e p="JustRotate.cs" t="Include" />
-                <e p="PressedBtn.cs" t="Include" />
-                <e p="SliderRunTo1.cs" t="Include" />
-                <e p="SliderValuePass.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
         <e p="UI" t="Include">
           <e p="Collection" t="Include">
             <e p="CollectionItem.uxml" t="Include" />
@@ -146,7 +45,6 @@
           </e>
           <e p="UXML" t="Include">
             <e p="ButtonTemplate.cs" t="Include" />
-            <e p="ButtonTemplate.uxml" t="Include" />
             <e p="ProgressBarTemplate.uxml" t="Include" />
           </e>
         </e>
@@ -154,11 +52,9 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="SpaceToolkit.sln" t="IncludeFlat" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
-      <e p="Unity.UIElements.Samples.csproj" t="IncludeRecursive" />
-      <e p="Unity.UIElements.Samples.Editor.csproj" t="IncludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
-    <e p="C:\Users\AlexHarkness\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\AlexHarkness\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SpaceToolkit.66698314.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_SpaceToolkit.1472839555.00" t="ExcludeRecursive" />
   </component>
 </project>
